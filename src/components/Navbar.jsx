@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -22,10 +23,10 @@ export default function Navbar() {
 
           {/* Desktop Menu */}
           <ul className="hidden md:flex space-x-6 text-gray-700">
-            <li className="hover:text-blue-600 cursor-pointer">Home</li>
-            <li className="hover:text-blue-600 cursor-pointer">About</li>
-            <li className="hover:text-blue-600 cursor-pointer">Projects</li>
-            <li className="hover:text-blue-600 cursor-pointer">Contact</li>
+            <NavLink to="/" className={({isActive})=> isActive ? "text-blue-600 font-semibold" : "text-gray-700 hover:text-blue-600"}>Home</NavLink>
+            <NavLink to="/about" className={({isActive})=> isActive ? "text-blue-600 font-semibold" : "text-gray-700 hover:text-blue-600"}>About</NavLink>
+            <NavLink to="/projects" className={({isActive})=> isActive ? "text-blue-600 font-semibold" : "text-gray-700 hover:text-blue-600"}>Projects</NavLink>
+            <NavLink to="/contact" className={({isActive})=> isActive ? "text-blue-600 font-semibold" : "text-gray-700 hover:text-blue-600"}>Contact</NavLink>
           </ul>
 
           {/* Mobile Button */}
