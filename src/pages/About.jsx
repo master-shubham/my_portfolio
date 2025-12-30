@@ -14,12 +14,15 @@ const skillVariant = {
 export default function About() {
   return (
     <AnimatedPage>
-      <section className="pt-24 px-6 min-h-screen bg-black text-white overflow-y-scroll no-scrollbar">
+      <section className="pt-28 px-6 min-h-screen">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           {/* PROFILE IMAGE */}
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
+            whileHover={{
+              scale: 0.9,
+            }}
             transition={{ duration: 0.6 }}
             className="flex justify-center mx-auto"
           >
@@ -43,13 +46,13 @@ export default function About() {
               About <span className="text-blue-500">Me</span>
             </h1>
 
-            <p className="text-gray-300 mb-4 leading-relaxed">
+            <p className="text-gray-500 mb-4 leading-relaxed">
               I am a passionate frontend developer who enjoys building clean,
               responsive, and interactive web applications using modern
               technologies.
             </p>
 
-            <p className="text-gray-300 mb-6">
+            <p className="text-gray-500 mb-6">
               I am currently improving my skills in React, Tailwind CSS, React
               Router, and Redux Toolkit by working on personal projects and
               learning best practices used in real-world applications.
@@ -78,10 +81,14 @@ export default function About() {
                     initial="hidden"
                     animate="visible"
                     whileHover={{ scale: 1.1 }}
-                    className="px-5 py-2 text-sm bg-gray-800 rounded-full 
-           border border-blue-500 
-           hover:bg-blue-600 hover:text-white 
-           transition cursor-pointer"
+                    className="
+        px-5 py-2 text-sm font-medium rounded-full cursor-pointer
+        bg-gray-200 text-gray-800
+        dark:bg-gray-800 dark:text-gray-200
+        border border-blue-500
+        hover:bg-blue-600 hover:text-white
+        transition
+      "
                   >
                     {skill}
                   </motion.span>
@@ -106,8 +113,12 @@ export default function About() {
                     initial="hidden"
                     animate="visible"
                     whileHover={{ scale: 1.1 }}
-                    className="px-5 py-2 text-sm bg-gray-900 rounded-full 
-                       border border-gray-500 cursor-pointer"
+                    className="px-5 py-2 text-sm font-medium rounded-full cursor-pointer
+        bg-gray-200 text-gray-800
+        dark:bg-gray-800 dark:text-gray-200
+        border border-blue-500
+        hover:bg-blue-600 hover:text-white
+        transition"
                   >
                     {skill}
                   </motion.span>

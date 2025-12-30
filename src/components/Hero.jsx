@@ -3,7 +3,8 @@ import { Typewriter } from "react-simple-typewriter"
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex items-center justify-center pt-20 px-4 bg-gradient from-white to-gray-100">
+    <section className="min-h-screen 
+                 flex items-center justify-center pt-20 px-4 bg-gradient from-white to-gray-100">
       <div className="text-center">
 
         {/* Name */}
@@ -48,7 +49,7 @@ export default function Hero() {
           className="mt-6"
         >
           <a
-            href="#projects"
+            href="/projects"
             className="inline-block px-6 py-3 text-sm sm:text-base
                        bg-blue-600 text-white rounded-lg
                        hover:bg-blue-700 hover:scale-105
