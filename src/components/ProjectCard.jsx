@@ -19,7 +19,7 @@ export default function ProjectCard({ project }) {
         className="
           h-40 from-blue-600 to-cyan-500
           flex items-center justify-center
-          text-4xl font-bold text-white
+          text-4xl font-bold
         "
       >
         {project.short}

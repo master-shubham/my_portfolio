@@ -6,14 +6,12 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav
-      className="
-        fixed top-0 left-0 w-full z-50
-        bg-white dark:bg-black
-        border-b border-gray-200 dark:border-gray-800
-        transition-colors
-      "
-    >
+   <nav
+  className="fixed top-0 left-0 w-full h-16 z-50
+  bg-white dark:bg-black
+  border-b border-gray-200 dark:border-gray-800"
+>
+
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
@@ -62,22 +60,21 @@ export default function Navbar() {
       {open && (
         <div className="md:hidden bg-white dark:bg-black border-t dark:border-gray-800">
           <div className="flex flex-row justify-evenly mb-2">
-  
-          <ul className="flex flex-col items-center space-y-4 py-4">
-            {["Home", "About", "Projects", "Contact"].map((item) => (
-              <NavLink
-                key={item}
-                to={item}
-                onClick={() => setOpen(false)}
-                className="text-gray-700 dark:text-gray-300"
-              >
-                {item}
-              </NavLink>
-              
-            ))}
-           
-          </ul>
-           <div className="mt-4 "><ToggleThemeBtn/></div>
+            <ul className="flex flex-col items-center space-y-4 py-4">
+              {["Home", "About", "Projects", "Contact"].map((item) => (
+                <NavLink
+                  key={item}
+                  to={item}
+                  onClick={() => setOpen(false)}
+                  className="text-gray-700 dark:text-gray-300"
+                >
+                  {item}
+                </NavLink>
+              ))}
+            </ul>
+            <div className="mt-4 ">
+              <ToggleThemeBtn />
+            </div>
           </div>
         </div>
       )}

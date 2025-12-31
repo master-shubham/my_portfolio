@@ -3,8 +3,8 @@ import { Typewriter } from "react-simple-typewriter"
 
 export default function Hero() {
   return (
-    <section className="min-h-screen 
-                 flex items-center justify-center pt-20 px-4 bg-gradient from-white to-gray-100">
+   <section className="min-h-screen w-full flex items-center justify-center">
+
       <div className="text-center">
 
         {/* Name */}
