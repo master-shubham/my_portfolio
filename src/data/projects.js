@@ -4,19 +4,24 @@ const projects = [
     short: "PW",
     tech: ["React", "Tailwind"],
     desc: "Personal responsive portfolio website",
+    github:"",
+    liveApp:""
   },
   {
     title: "Todo App",
     short: "TD",
     tech: ["JavaScript"],
     desc: "Task management app with local storage",
+    github:"",
+    liveApp:""
   },
   {
     title: "Weather App",
     short: "WA",
-    tech: ["React"],
+    tech: ["JavaScript"],
     desc: "Live weather using API",
-    liveApp:"https://github.com/master-shubham/WeatherApp",
+    github:"",
+    liveApp:"",
   },
 ];
 

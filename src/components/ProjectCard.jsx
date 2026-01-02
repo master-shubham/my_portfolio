@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { NavLink } from "react-router-dom";
 
 export default function ProjectCard({ project }) {
   return (
@@ -54,17 +55,20 @@ export default function ProjectCard({ project }) {
 
         {/* BUTTONS */}
         <div className="flex gap-3">
-          <button
+          {
+            project.liveApp &&   <button
             className="
               px-4 py-2 rounded-md text-sm font-medium
               bg-blue-500 text-white
               hover:bg-blue-600 transition
             "
           >
-            Live
+          <NavLink to={project.liveApp}>Live</NavLink>
           </button>
+          }
+        
           {
-            project.liveApp &&  <button
+            project.github &&  <button
             className="
               px-4 py-2 rounded-md text-sm font-medium
               bg-gray-200 text-gray-800
@@ -73,7 +77,7 @@ export default function ProjectCard({ project }) {
               transition
             "
           >
-           <a href={`https://github.com/master-shubham/WeatherApp`} target="_blank">GitHub</a> 
+           <NavLink to={project.github} target="_blank">GitHub</NavLink> 
           </button>
           }
          
