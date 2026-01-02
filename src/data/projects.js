@@ -1,34 +1,24 @@
 const projects = [
   {
-    id: 1,
-    title: "Personal Portfolio",
-    description:
-      "A responsive personal portfolio built using React, Tailwind CSS, React Router, and Framer Motion.",
-    tech: ["React", "Tailwind", "Framer Motion"],
-    live: "https://your-portfolio-link.com",
-    github: "https://github.com/yourusername/portfolio",
-    image: "/images/portfolio.png",
+    title: "Portfolio Website",
+    short: "PW",
+    tech: ["React", "Tailwind"],
+    desc: "Personal responsive portfolio website",
   },
   {
-    id: 2,
     title: "Todo App",
-    description:
-      "A simple Todo application with CRUD functionality using React and local storage.",
-    tech: ["React", "JavaScript"],
-    live: "#",
-    github: "#",
-    image: "/images/portfolio.png",
+    short: "TD",
+    tech: ["JavaScript"],
+    desc: "Task management app with local storage",
   },
   {
-    id: 3,
-    title: "Landing Page",
-    description:
-      "A modern responsive landing page using HTML, CSS, and JavaScript.",
-    tech: ["HTML", "CSS", "JavaScript"],
-    live: "#",
-    github: "#",
-    image: "/images/portfolio.png",
+    title: "Weather App",
+    short: "WA",
+    tech: ["React"],
+    desc: "Live weather using API",
+    liveApp:"https://github.com/master-shubham/WeatherApp",
   },
-]
+];
+
 
 export default projects

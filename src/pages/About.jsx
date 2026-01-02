@@ -104,7 +104,6 @@ export default function About() {
                 {[
                   "Python (Basics)",
                   "Node.js (Basics)",
-                  "Express.js (Learning)",
                 ].map((skill, i) => (
                   <motion.span
                     key={skill}

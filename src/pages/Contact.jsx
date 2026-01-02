@@ -41,9 +41,7 @@ export default function Contact() {
           dark:bg-gray-900 dark:text-gray-100
         "
       >
-        <h2 className="text-2xl font-bold text-center mb-6">
-          Contact Me
-        </h2>
+        <h2 className="text-2xl font-bold text-center mb-6">Contact Me</h2>
 
         <form onSubmit={handleSubmit}>
           <input
@@ -64,6 +62,8 @@ export default function Contact() {
             value={form.email}
             onChange={handleChange}
             placeholder="Your Email"
+            pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+            title="Invalid email address"
             className="
               w-full p-3 mb-4 rounded-lg outline-none
               bg-white text-gray-900

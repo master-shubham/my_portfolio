@@ -63,8 +63,8 @@ export default function ProjectCard({ project }) {
           >
             Live
           </button>
-
-          <button
+          {
+            project.liveApp &&  <button
             className="
               px-4 py-2 rounded-md text-sm font-medium
               bg-gray-200 text-gray-800
@@ -73,8 +73,10 @@ export default function ProjectCard({ project }) {
               transition
             "
           >
-            GitHub
+           <a href={`https://github.com/master-shubham/WeatherApp`} target="_blank">GitHub</a> 
           </button>
+          }
+         
         </div>
       </div>
     </motion.div>
