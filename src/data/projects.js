@@ -8,6 +8,14 @@ const projects = [
     liveApp:""
   },
   {
+    title: "iNotebook App",
+    short: "INote",
+    tech: ["React","Boostrap"],
+    desc: "Note on the cloud using MERN Stack",
+    github:"",
+    liveApp:""
+  },
+  {
     title: "Todo App",
     short: "TD",
     tech: ["JavaScript"],

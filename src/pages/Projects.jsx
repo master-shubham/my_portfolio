@@ -14,7 +14,7 @@ export default function Projects() {
       : projects.filter((p) => p.tech.includes(filter));
 
   return (
-    <section className="pt-28 px-6 min-h-screen">
+    <section className="pt-28 px-6 min-h-screen overflow-y-hidden">
       <h1 className="text-4xl font-bold text-center mb-8">
         My <span className="text-blue-500">Projects</span>
       </h1>
