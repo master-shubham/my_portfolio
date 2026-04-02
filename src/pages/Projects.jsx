@@ -43,7 +43,7 @@ export default function Projects() {
             transition: { staggerChildren: 0.15 },
           },
         }}
-        className="grid md:grid-cols-3 gap-6"
+        className="grid items-center m-auto md:grid-cols-3 sm:grid-cols-1 gap-6"
       >
         {filteredProjects.map((project, index) => (
           <ProjectCard key={index} project={project} />

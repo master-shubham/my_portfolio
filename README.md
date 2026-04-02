@@ -1,16 +1,119 @@
-# React + Vite
+# 🚀 Shubham's Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive **developer portfolio website** built with React and Vite to showcase my projects, skills, and experience.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌐 Live Demo
 
-## React Compiler
+🔗 https://your-portfolio-link.vercel.app
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📸 Screenshots
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+<!-- Add your screenshots here -->
+**Home**
+![Home Page](/public/images/Home.png)
+
+**About**
+![About Page](/public/images/About.png)
+
+**Projects**
+![Projects Page](/public/images/Project.png)
+
+**Contact**
+![Contact Page](/public/images/Contact.png)
+
+---
+
+## ✨ Features
+
+* 🧑‍💻 Modern Developer Portfolio UI
+* 📂 Projects Showcase with Live Demo & Code Links
+* 🌙 Dark/Light Theme Toggle (Redux)
+* ⚡ Fast Performance with Vite
+* 🔄 Lazy Loading for optimized performance
+* 🎨 Styled with Tailwind CSS
+* 📱 Fully Responsive Design
+* 🧠 Clean Component-Based Architecture
+
+---
+
+## 🛠️ Tech Stack
+
+* **Frontend:** React.js
+* **Build Tool:** Vite
+* **Styling:** Tailwind CSS
+* **State Management:** Redux Toolkit
+* **Routing:** React Router
+
+---
+
+## 📁 Folder Structure
+
+```
+src/
+ ┣ assets/        # Images & static files
+ ┣ components/    # Reusable components
+ ┣ pages/         # Main pages (Home, About, Projects, Contact)
+ ┣ redux/         # Redux store & slices
+ ┣ data/          # Static project data
+ ┣ App.jsx
+ ┗ main.jsx
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+Clone the repository:
+
+```
+git clone https://github.com/master-shubham/my_portfolio.git
+```
+
+Go to project directory:
+
+```
+cd my_portfolio
+```
+
+Install dependencies:
+
+```
+npm install
+```
+
+Run the development server:
+
+```
+npm run dev
+```
+
+---
+
+## 📌 Future Improvements
+
+* 🔥 Add animations (Framer Motion)
+* 📊 Add project filtering
+* 🧾 Add resume download option
+* 🌍 SEO optimization
+
+---
+
+## 🤝 Connect With Me
+
+* GitHub: https://github.com/master-shubham
+* LinkedIn: https://linkedin.com/in/your-link
+* Email: [your-email@example.com](mailto:your-email@example.com)
+
+---
+
+## ⭐ Show Your Support
+
+If you like this project, please ⭐ the repo and share it!
+
+---
+
+> Built with ❤️ by Shubham

@@ -14,7 +14,7 @@ const skillVariant = {
 export default function About() {
   return (
     <AnimatedPage>
-      <section className="pt-28 px-6">
+      <section className="pt-28 px-6 pb-4">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           {/* PROFILE IMAGE */}
           <motion.div
